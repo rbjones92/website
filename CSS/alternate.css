@@ -1,0 +1,142 @@
+body {
+    background: url(../Images/graph.jpg) no-repeat center center fixed;
+    background-color: black;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color:blanchedalmond;
+}
+
+li {
+    list-style-type:none !important;
+    text-align: center;
+    vertical-align: middle;
+}
+    
+.center {
+    color:black;
+    width:auto;
+    margin:5px;
+    padding:5px;
+    font-size:20px;
+}
+
+.middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.middle2 {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+}
+
+.middle_small {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+
+
+.slide_center {
+    animation: slide-center;
+    animation-duration:2s;
+}
+
+.fade_in {
+    animation:fade_in;
+    animation-duration:3s;
+}
+
+@keyframes fade_in {
+    0%   {opacity: .0;}
+    25%  {opacity: .25}
+    50%  {opacity: .5}
+    75%  {opacity: .75}
+    100% {opacity: 1.0}
+    }
+
+@keyframes slide-center {
+    from {
+        margin-left: -35%;
+        width: 100%; 
+    }
+        to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#navcontainer ul { 
+    list-style-type: none;
+    margin: 0px;
+    padding: 5px;
+    text-align:center;
+}
+
+
+#navcontainer ul li {
+    display: inline;
+    text-decoration: none;
+    font-size:20px;
+    padding: .2em 1em;
+    color: #fff;
+    background-color:none;
+}
+
+#navcontainer ul li a:hover {
+    color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: none;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 85px;
+    box-shadow: 0px 8px 16px 0px lightblue;
+    padding: 8px 12px;
+    border-style:groove;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+a:visited {
+    text-decoration:none;
+    color: black;
+}
